@@ -4,6 +4,11 @@ import kotlin.math.pow
     7 kyu
  */
 
+fun getMiddle(word : String) : String {
+    //Code goes here!
+    return ""
+}
+
 
 fun highAndLow(numbers: String): String {
     //Highest and Lowest
