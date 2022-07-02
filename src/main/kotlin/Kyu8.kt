@@ -2,6 +2,8 @@
     8 kyu
  */
 
+
+fun removeChar(str: String) = str.substring(2,str.length-2)
 fun evenOrOdd(number: Int): String = if (number % 2 == 0) "Even " else "Odd"
 fun repeatStr(r: Int, str: String) : String = str.repeat(r)
 fun areaOrPerimeter(l:Int, w:Int):Int {
