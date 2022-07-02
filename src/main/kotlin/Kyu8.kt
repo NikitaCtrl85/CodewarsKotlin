@@ -2,7 +2,7 @@
     8 kyu
  */
 
-fun evenOrOdd(number: Int): String = if ((number % 2 == 0) || (number == 0)) "Even " else "Odd"
+fun evenOrOdd(number: Int): String = if (number % 2 == 0) "Even " else "Odd"
 fun repeatStr(r: Int, str: String) : String = str.repeat(r)
 fun areaOrPerimeter(l:Int, w:Int):Int {
     // fun areaOrPerimeter(l: Int, w: Int) = if (l == w) l * w else 2 * (l + w)

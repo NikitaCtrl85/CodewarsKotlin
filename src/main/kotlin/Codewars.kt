@@ -14,11 +14,11 @@ fun main(args : Array<String>) {
         //val regexp = """.*\d{3}.*"""
         //val pattern = regexp.toRegex()
        // println(line.matches(pattern))
-        for (test in 1 ..128)
-        println(formatDuration(Random.nextInt(1, 31536000)))
-
+       // for (test in 1 ..128)
+       // println(formatDuration(Random.nextInt(1, 31536000)))
         //println(formatDuration(86400 + 31536000+31536000+1))
        // println(formatDuration(31536000 + 60))
+        println( evenOrOdd(7))
     }
     println("The code took to execute $elapsedTime ms")
 }
