@@ -1,4 +1,3 @@
-import kotlin.random.Random
 import kotlin.system.measureTimeMillis
 val MorseCode = mapOf(".-" to "A", "-..." to "B", "-.-." to "C", "-.." to "D", "." to "E", "..-." to "F", "--." to "G",
                     "...." to "H", ".." to "I", ".---" to "J", "-.-" to "K", ".-.." to "L", "--" to "M", "-." to "N",
@@ -20,7 +19,7 @@ fun main(args : Array<String>) {
        // for (i in 1..2)
         //println("$i  ${subtractSum(Random.nextInt(10,10000))}")
         println(
-            reverseWords("I like eating")
+            hero(10,5)
         )
     }
     println("The code took to execute $elapsedTime ms")

@@ -1,3 +1,5 @@
+import java.util.*
+
 /*
     8 kyu
  */
@@ -5,6 +7,18 @@
 
 
 
+
+
+fun simpleMultiplication(n: Int): Int {
+    return  if (n % 2 == 0) n * 8 else  n * 9
+}
+fun makeUpperCase(str: String) = str.toUpperCase()//MakeUpperCase
+fun hero(bullets: Int, dragons: Int) = (bullets - dragons * 2) >= 0
+fun grow(arr: Array<Int>): Int {
+    var m = 1
+    arr.map { m *= it }
+    return m
+}
 fun reverseSeq(n: Int): List<Int> {
     val lis:MutableList<Int> = mutableListOf()
     for ( i in n downTo   1)
