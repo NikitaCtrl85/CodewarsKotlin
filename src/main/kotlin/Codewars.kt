@@ -17,9 +17,7 @@ fun main(args : Array<String>) {
         //println(formatDuration(86400 + 31536000+31536000+1))
        // println(formatDuration(31536000 + 60))
 
-        println(
-            century(89)
-        )
+        println( abbrevName("patrick feenan"))
     }
     println("The code took to execute $elapsedTime ms")
 }

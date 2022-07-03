@@ -1,8 +1,21 @@
+import kotlin.math.ceil
+import kotlin.math.round
+
 /*
     8 kyu
  */
 
-
+fun abbrevName(name:String): String {
+    println(name)
+    var ch = ""
+    val b = """\s\w"""
+    val found = b.toRegex().findAll(name)
+    for ( st2 in found)  ch = st2.value
+    return "${name[0].toUpperCase()}.${ch[1].toUpperCase()}"
+}
+//fun abbrevName(name: String) = name.split(" ").joinToString(".") { it.take(1).uppercase() }
+fun litres(time: Double) = Math.round( (time - 0.99) * 0.5).toInt()
+//fun litres(time: Double) = Math.floor(time/2).toInt()
 fun isDivisible(n: Int, x: Int, y: Int): Boolean {
     return ( n % x == 0) && (n % y == 0)
 }
