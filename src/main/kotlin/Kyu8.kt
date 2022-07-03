@@ -3,7 +3,25 @@
  */
 
 
-fun removeChar(str: String) = str.substring(2,str.length-2)
+fun isDivisible(n: Int, x: Int, y: Int): Boolean {
+    return ( n % x == 0) && (n % y == 0)
+}
+fun century(number: Int): Int {
+    return if ( number % 100 != 0 ) {
+        number / 100 + 1
+    } else {
+        number / 100
+    }
+}
+fun findSmallestInt(nums: List<Int>) = nums.sorted()[0]
+//fun findSmallestInt(nums: List<Int>) = nums.minOf { it }
+fun summation(n:Int):Int {
+    var sum = 0
+    for ( i in 1 ..n) sum +=i
+    return sum
+}
+fun numberToString(num: Int) = num.toString()
+fun removeChar(str: String) = str.substring(1,str.length-1)
 //fun removeChar(str: String): String = str.substring(1,str.lastIndex)
 fun evenOrOdd(number: Int): String = if (number % 2 == 0) "Even " else "Odd"
 fun repeatStr(r: Int, str: String) : String = str.repeat(r)
