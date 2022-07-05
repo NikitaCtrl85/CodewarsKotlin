@@ -4,10 +4,22 @@ import java.util.*
     8 kyu
  */
 
+public fun sum(mixed: List<Any>): Int {
+    var s = 0
+    mixed.map { if (it is String) s+= it.toInt() else
+            if ( it is Int) s+=it
+    }
+    return s
+}
 
-
-
-
+fun points(games: List<String>): Int {
+    var check =0
+    games.map {
+        check += if ( it[0].digitToInt() > it[2].digitToInt() ) 3 else
+            if (it[0].digitToInt() < it[2].digitToInt()) 0 else 1
+    }
+    return check
+}
 
 fun simpleMultiplication(n: Int): Int {
     return  if (n % 2 == 0) n * 8 else  n * 9

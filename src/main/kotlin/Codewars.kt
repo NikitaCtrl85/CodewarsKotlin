@@ -19,7 +19,7 @@ fun main(args : Array<String>) {
        // for (i in 1..2)
         //println("$i  ${subtractSum(Random.nextInt(10,10000))}")
         println(
-            hero(10,5)
+            sum(listOf(9, 3, "7", "3"))
         )
     }
     println("The code took to execute $elapsedTime ms")
